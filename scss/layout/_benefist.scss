@@ -1,43 +1,65 @@
-.benefist{
-    @include section;
+.benefist {
+  @include section;
+
+  @media screen and (min-width: 1200px){
     padding-bottom: 0;
+  }
 }
 
-.benefist__container{
-    @extend %container;
+.benefist__container {
+  @extend %container;
 }
 
 .benefist__list {
-    @extend %reset-list;
+  @extend %reset-list;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
 
 .benefist__item {
-    width: 270px;
+  max-width: 450px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
 
 .benefist__box {
-    height: 120px;
-    background-color: var(--background3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--background3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .benefist__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+    @media screen and (min-width: 768px){
+    text-align: left;
+    }
 }
 
 .benefist__desc {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }

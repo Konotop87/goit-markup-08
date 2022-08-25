@@ -36,6 +36,12 @@
         <a href="index.html" class="heder__logo link">
           <span class="heder__logo-accent">Web</span><span class="heder__logo-dark">Studio</span>
         </a>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -674,6 +680,57 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu__container is-open" data-menu>
+      <button class="mobile-menu-close-btn" data-menu-close>
+        <svg class="mobile-menu-close__icon" width="40" height="40">
+          <use href="./images/icons.svg#mobile-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a href="index.html" class="mobile-menu__link link">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="portfolio.html" class="mobile-menu__link link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contact">
+        <li class="mobile-menu-contact__item">
+          <a href="tel:+380961111111" class="mobile-menu-contact__link-tel link">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-menu-contact__item">
+          <a href="mailto:info@devstudio.com" class="mobile-menu-contact__link-mail link">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-socilas">
+        <li class="mobile-menu-socilas__item">
+          <a href="" class="mobile-menu-socilas__link link">Instagram</a>
+        </li>
+        <li class="mobile-menu-socilas__item">
+          <a href="" class="mobile-menu-socilas__link link">Twitter</a>
+        </li>
+        <li class="mobile-menu-socilas__item">
+          <a href="" class="mobile-menu-socilas__link link">Facebook</a>
+        </li>
+        <li class="mobile-menu-socilas__item">
+          <a href="" class="mobile-menu-socilas__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./JS/modal.js"></script>
+    <script src="./JS/mobil-menu.js"></script>
   </body>
 </html>

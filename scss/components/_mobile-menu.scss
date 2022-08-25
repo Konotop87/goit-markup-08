@@ -1,0 +1,115 @@
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+position: absolute;
+top: 10px;
+    right: 15px;
+    cursor: pointer;
+
+}
+
+.mobile-menu__container {
+  @extend %container;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  height: 100%;
+  background-color: var(--white-color);
+  padding: 48px 40px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity var(--animation), visibility var(--animation);
+}
+
+.mobile-menu__nav {
+  @extend %reset-list;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu-contact {
+  @extend %reset-list;
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mobile-menu-contact__item {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contact__link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu-contact__link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.mobile-menu-socilas {
+  @extend %reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobile-menu-socilas__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu-socilas__item:not(:last-child) .mobile-menu-socilas__link {
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}

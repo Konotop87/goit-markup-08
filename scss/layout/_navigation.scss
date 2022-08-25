@@ -1,11 +1,21 @@
 .nav {
-  margin-right: auto;
+  display: none;
+
+@media screen and (min-width: 768px){
+display:grid ;
+margin-right: auto;
+}
 }
 
+
 .nav__list {
-  @extend %reset-list;
-  display: flex;
+display: none;
+@extend %reset-list;
+
+@media screen and (min-width: 768px){
+display: flex;
   gap: 50px;
+}
 }
 
 .nav__link {

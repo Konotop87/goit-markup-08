@@ -1,5 +1,10 @@
-.works{
-@include section;
+.works {
+ display: none;
+ 
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    @include section;
+  }
 }
 
 .works__container {
